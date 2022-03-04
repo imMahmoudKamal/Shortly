@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="statistics__heading">Advanced Statistics</h2>
+  <p class="statistics__text">
+    Track how your links are performing across the web with our advanced
+    statistics dashboard.
+  </p>
+
+  <ul class="statistics__cards">
+    <li *ngFor="let card of cards">
+      <div class="statistics__cards__item">
+        <span class="statistics__cards__icon">
+          <svg-icon src="assets/{{ card.iconUrl }}"></svg-icon>
+        </span>
+        <h3 class="statistics__cards__heading">{{ card.title }}</h3>
+        <p class="statistics__cards__text">{{ card.text }}</p>
+      </div>
+    </li>
+  </ul>
+</div>

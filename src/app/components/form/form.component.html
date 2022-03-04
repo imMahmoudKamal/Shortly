@@ -1,0 +1,19 @@
+<div class="container">
+  <form class="form" autocomplete="off" (ngSubmit)="onSearch()">
+    <input
+      [ngClass]="showError ? 'err' : ''"
+      class="form__input"
+      type="search"
+      name="search"
+      placeholder="Shorten a link here..."
+      [(ngModel)]="search"
+    />
+
+    <span class="form__err">{{ erorrMessage }}</span>
+    <button class="form__submit" type="submit">Shorten It!</button>
+
+    <div [ngClass]="loadding ? 'show' : ''" class="form__loading"></div>
+  </form>
+
+  <div *ngFor="let link of recentLinks" [data]="link" app-card></div>
+</div>

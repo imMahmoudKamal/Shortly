@@ -1,0 +1,27 @@
+<section class="footer__pre">
+  <h3 class="footer__pre__heading">Boost your links today</h3>
+
+  <button class="button__cta">Get Started</button>
+</section>
+
+<div class="container">
+  <svg-icon class="footer__logo" src="assets/logo.svg"></svg-icon>
+
+  <section class="footer__section" *ngFor="let section of footerSections">
+    <h4 class="footer__section__heading">{{ section.title }}</h4>
+
+    <ul class="footer__section__list" *ngFor="let link of section.links">
+      <li>
+        <a href="#!">{{ link }}</a>
+      </li>
+    </ul>
+  </section>
+
+  <ul class="footer__social">
+    <li class="footer__social__icon" *ngFor="let icon of socialIcons">
+      <a href="#!" aria-label="social icon">
+        <svg-icon src="assets/{{ icon }}.svg"></svg-icon>
+      </a>
+    </li>
+  </ul>
+</div>

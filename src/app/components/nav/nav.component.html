@@ -1,0 +1,25 @@
+<div class="container">
+  <a class="nav__heading" aria-label="logo" href="#!">
+    <svg-icon src="assets/logo.svg"></svg-icon>
+  </a>
+
+  <button
+    #menuToggler
+    class="nav__toggler"
+    aria-label="Menu Toggler"
+    (click)="menuToggle($event)"
+  ></button>
+
+  <div #menu [ngClass]="showClass ? 'show' : ''" class="nav__links">
+    <ul>
+      <li><a href="#!">featuers</a></li>
+      <li><a href="#!">pricing</a></li>
+      <li><a href="#!">resources</a></li>
+    </ul>
+
+    <div>
+      <button>login</button>
+      <button>sign up</button>
+    </div>
+  </div>
+</div>

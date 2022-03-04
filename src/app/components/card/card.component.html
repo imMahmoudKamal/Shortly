@@ -1,0 +1,11 @@
+<div class="short-card">
+  <p class="short-card__after">{{ data.fullLink }}</p>
+  <p class="short-card__before">{{ data.shortLink }}</p>
+  <button
+    [ngClass]="text === 'Copied!' ? 'copied' : ''"
+    class="short-card__copy"
+    (click)="copyLink()"
+  >
+    {{ text }}
+  </button>
+</div>
