@@ -147,4 +147,16 @@
       height: fit-content;
     }
   }
+
+  &__copy {
+    margin-top: 1.5rem;
+    font-size: 0.65rem;
+    color: var(--clr-neutral-100);
+    text-align: center;
+
+    @media (min-width: 48rem) {
+      grid-column: 1 / -1;
+      font-size: 0.8rem;
+    }
+  }
 }
