@@ -8,8 +8,7 @@
 
 <p align="center">Made with ❤️ by Mahmoud Kamal &copy; 2022</p>
 
-This is a simple Chatting App with rooms you can join room and start the chat.
-
+This is a URL Shortening App where you can shorten any valid link.
 ## Table of contents
 
 - [Overview](#overview)
@@ -28,17 +27,20 @@ This is a simple Chatting App with rooms you can join room and start the chat.
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- Choose any room and join the chat
-- View different message styles
-- Show sender name and time
+- Shorten any valid URL
+- Show a loading screen while shorten a link
+- See a list of their shortened links, even after refreshing the browser
+- Copy the shortened link to their clipboard in a single click
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
 
 ### Screenshot
 
-![](https://raw.githubusercontent.com/imMahmoudKamal/chat-socket/main/public/img/showcase.jpg)
+![](https://raw.githubusercontent.com/imMahmoudKamal/shortly/main/src/assets/showcase.jpg)
 
 ### Links
 
-- Live Site URL: [Chatting App](https://chatting-app-socket.herokuapp.com/)
+- Live Site URL: [Shortly | Mahmoud Kamal](https://shortly-mocha.vercel.app/)
 
 ## My process
 
@@ -50,50 +52,14 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Sass](https://sass-lang.com/) - CSS pre-processor
-- [Express](https://expressjs.com/) - Node.Js Framework
-- [Socket.IO](https://socket.io/) - WebSocket connections
+- [Angular](https://angular.io/) - JavaScript Framework
+- [Shrtcode](https://shrtco.de/) - Link Shortner API
 
 ### What I learned
 
-- Deploy a node js app to heroku
-- Using Ejs lib and making html templates
-
-#### Write semantic html
-
-```html
-<main class="chatting" data-main>
-  <div class="chatting__container">
-    <h1>using semantic html && BEM naming convention 🎉🎉</h1>
-  </div>
-</main>
-```
-
-#### Linear gradient for font color
-
-```css
-@mixin gradient-font-clr($gradient) {
-  background: $gradient;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; // fallback
-}
-```
-
-#### Format message helper function
-
-```js
-function formatMessage(user, message) {
-  const date = new Date();
-  const [hours, minute, when] = date.toLocaleTimeString().split(":");
-
-  return {
-    user,
-    message,
-    time: `${hours}:${minute} ${when.split(" ")[1]}`,
-  };
-}
-```
+- Angular Framework
+- Angular services and API
+- Deploy an Angular app to Vercel
 
 ## Author
 
