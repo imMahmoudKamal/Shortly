@@ -63,4 +63,4 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [@immahmoudkamal](https://www.twitter.com/immahmoudkamal/)
+- LinkedIn - [@immahmoudkamal](https://www.linkedin.com/in/immahmoudkamal/)
